@@ -1,3 +1,3 @@
 url=https://www.flipkart.com/
-Chromedriver=.//Drivers//chromedriver.exe
+Chromedriver=.//driver//chromedriver.exe
 Edgedriver=.//Drivers//msedgedriver.exe

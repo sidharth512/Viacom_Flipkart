@@ -17,7 +17,7 @@ import readconfit_viacom.XLUtility;
 
 public class TC_001_viacom extends BaseTest_viacom{
 	@Test(dataProvider="logindata")
-	public void startup(String user,String pwd) throws InterruptedException {
+	public void startup(String user,String pwd) throws InterruptedException, IOException {
 		System.out.println(driver.getTitle());
 		Login_Page click=new Login_Page(driver);
 	 click.username(user);
@@ -29,6 +29,7 @@ public class TC_001_viacom extends BaseTest_viacom{
 			driver.switchTo().defaultContent();
 		}
 		else {
+			capturescreen(driver, "startup");
 			click.login();
 			click.logout();
 		}
@@ -58,13 +59,7 @@ String[][]getData() throws IOException{
 		}
 	}
 	
-	/*
-	 * String [][] loginData= { {"857451" ,"123455"}, {"papulu.rataer", "sidh1234"},
-	 * { "papulu.pattanaik@gmail.com" ,"sidh1234"},
-	 * 
-	 * 
-	 * };
-	 */
+	
 	
 	return loginData;
 }

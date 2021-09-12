@@ -5,8 +5,8 @@
   <test thread-count="5" name="actitime">
   <parameter name="browser" value="Chrome"/>
     <classes>
-     <class name="TastCase_pakage.TC_001_viacom"/> 
-   <!--    <class name="com.actitime.testCases.TC_loginDDt_002"/> -->
+       <class name="TastCase_pakage.TC_001_viacom"/> 
+      
     </classes>
    
   </test> 

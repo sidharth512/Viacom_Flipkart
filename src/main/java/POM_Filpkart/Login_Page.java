@@ -23,9 +23,9 @@ public class Login_Page {
 		PageFactory.initElements(driver, this);
 		this.driver=driver;
 	}
-	public  void username(String user) {
+	public  void username(String USER) {
 		inputTest.clear();
-		inputTest.sendKeys(user);
+		inputTest.sendKeys(USER);
 		
 	}
 	public void password(String pwd) {

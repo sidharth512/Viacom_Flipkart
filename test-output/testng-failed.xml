@@ -7,7 +7,7 @@
       <class name="TastCase_pakage.TC_001_viacom">
         <methods>
           <include name="setup"/>
-          <include name="startup" invocation-numbers="0 1 2 3"/>
+          <include name="startup" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- TastCase_pakage.TC_001_viacom -->
     </classes>
